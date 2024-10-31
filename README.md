@@ -1,8 +1,8 @@
 # Ultimate-Azure-CICD
 
-# Create-acr-secret-command:
+## Create-acr-secret-command:
 
-# Command to create ACR ImagePullSecret
+### Command to create ACR ImagePullSecret
 
 ```
 kubectl create secret docker-registry <secret-name> \
