@@ -1,6 +1,6 @@
 # Ultimate-Azure-CICD
 
-# create-acr-secret-command:
+# Create-acr-secret-command:
 
 # Command to create ACR ImagePullSecret
 
