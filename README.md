@@ -3,7 +3,7 @@
 ## Original GitHub Repo used: "dockersamples/example-voting-app"
 https://github.com/dockersamples/example-voting-app
 
-"This project is based on the excellent work of the original GitHub repository 'dockersamples/example-voting-app', which provided the source code for this application. All credit for the original design and implementation goes to the creators of the original repository. Thank you for creating such a great application!"
+"This project is based on the excellent work of the original GitHub repository 'dockersamples/example-voting-app'. All credit for the original design and implementation goes to the creators of the original repository. Thank you for creating such a great application!"
 
 ## Create-acr-secret-command:
 
