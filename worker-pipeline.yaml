@@ -5,7 +5,7 @@
 trigger:
  paths:
    include:
-     - vote/*
+     - worker/*
 
 resources:
 - repo: self
@@ -13,9 +13,9 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '6d98ab55-5471-477e-b47c-a3c92999a578'
-  imageRepository: 'votingapp'
+  imageRepository: 'workerapp'
   containerRegistry: 'rakeshazurecicd.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/vote/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/worker/Dockerfile'
   tag: '$(Build.BuildId)'
 
 pool:
@@ -35,7 +35,7 @@ stages:
         containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
         command: 'build'
-        Dockerfile: 'vote/Dockerfile'
+        Dockerfile: 'worker/Dockerfile'
         tags: '$(tag)'
 - stage: Push
   displayName: Push 
@@ -59,4 +59,4 @@ stages:
     - task: ShellScript@2
       inputs:
         scriptPath: 'scripts/updateK8sManifests.sh'
-        args: 'vote $(imageRepository) $(tag)'
+        args: 'worker $(imageRepository) $(tag)'
