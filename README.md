@@ -1,4 +1,4 @@
-# Ultimate-Azure-CICD (Complete Migration from GitHub to Azure Pipelines along with the Source Code)
+# Ultimate-Azure-DevOps-CICD (Complete Migration from GitHub to Azure Pipelines along with the Source Code)
 
 ## Original GitHub Repo used: "dockersamples/example-voting-app"
 https://github.com/dockersamples/example-voting-app
