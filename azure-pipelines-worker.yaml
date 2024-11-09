@@ -60,3 +60,4 @@ stages:
       inputs:
         scriptPath: 'scripts/updateK8sManifests.sh'
         args: 'worker $(imageRepository) $(tag)'
+
