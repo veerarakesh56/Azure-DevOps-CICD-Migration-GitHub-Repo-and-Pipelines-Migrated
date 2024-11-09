@@ -30,7 +30,7 @@ stages:
     displayName: Build
     steps:
     - task: Docker@2
-      displayName: Build an image
+      displayName: Build the image
       inputs:
         containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
@@ -44,7 +44,7 @@ stages:
     displayName: Push
     steps:
     - task: Docker@2
-      displayName: Build an image
+      displayName: Push the image
       inputs:
         containerRegistry: '$(dockerRegistryServiceConnection)'
         repository: '$(imageRepository)'
@@ -54,7 +54,7 @@ stages:
   displayName: Update 
   jobs:
   - job: Update
-    displayName: Update
+    displayName: Update the image
     steps:
     - task: ShellScript@2
       inputs:
