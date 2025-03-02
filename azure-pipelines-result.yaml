@@ -21,7 +21,6 @@ variables:
 pool:
  name: 'azureagent'
 
-
 stages:
 - stage: Build
   displayName: Build 
